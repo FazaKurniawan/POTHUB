@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html, body {
+    height: 100%;
+}
+
+main, .container {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.login-header img, .register-header img {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.navbar-brand, .card-title {
+    color: #28a745 !important; 
+}
+
+
+.navbar-nav .nav-link {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #28a745 !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #28a745;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #ffffff !important; 
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-transform: none;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 4px 10px rgba(40,167,69,0.18);
+    transition: transform 0.08s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(33,136,56,0.22);
+}
+
+.btn-success:focus, .btn-success:active {
+    box-shadow: 0 0 0 0.2rem rgba(40,167,69,0.25);
+    outline: none;
+}
